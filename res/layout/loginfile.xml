@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout01"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:background="@drawable/backimg"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				>
+
+
+
+<RelativeLayout android:id="@+id/RelativeLayout02"
+		android:layout_height="80dip" android:layout_width="fill_parent"
+		>
+					
+
+<ImageView android:id="@+id/ImageView01" 
+		    android:adjustViewBounds="true" 
+		    android:fitsSystemWindows="true"  
+		    android:src="@drawable/mobilelearninglogo" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+            ></ImageView>
+      <!--       
+           <TextView android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:textColor="#1589FF" android:text="Member Sign In" android:layout_width="fill_parent" android:id="@+id/TextView01" android:fadingEdge="horizontal" android:height="50dip" android:clickable="false" android:textSize="30dip"></TextView>
+--> 
+</RelativeLayout>
+	
+
+
+<RelativeLayout android:id="@+id/RelativeLayout03"
+		android:layout_width="fill_parent" android:layout_height="160dip"
+		 android:layout_above="@+id/RelativeLayout04"
+		android:layout_below="@+id/RelativeLayout02">
+
+<TableLayout android:id="@+id/tableLayout1"
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" android:padding="5dip">
+		
+		<TableRow android:padding="5dip" android:layout_width="fill_parent">
+			<TextView android:layout_height="wrap_content" android:textColor="#ffffff" android:text="Username" android:layout_width="fill_parent" android:id="@+id/TextView01" android:fadingEdge="horizontal" android:height="50dip" android:clickable="false" android:textSize="20dip"></TextView>
+			<EditText android:id="@+id/uname" 
+			          android:text="" 
+			          android:layout_toRightOf="@+id/Button01" 
+			          android:layout_height="42dip" 
+			           
+			          android:layout_width="fill_parent" 
+			          >
+			</EditText>
+		</TableRow>
+
+<TableRow android:padding="5dip" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content" 
+		          android:textColor="#ffffff" 
+		          android:text="Password" 
+		          android:layout_width="wrap_content" 
+		          android:id="@+id/TextView02" 
+		          android:textSize="20dip">
+		</TextView>
+		<EditText android:id="@+id/upass" 
+		          
+		          android:password="true"
+		          android:layout_height="42dip" 
+		          android:layout_width="fill_parent" 
+		          android:text="" 
+		         >
+	    </EditText>
+	 
+</TableRow>
+<TableRow android:padding="5dip">
+		<TextView></TextView>
+		<Button  android:id="@+id/Button01" 
+				android:background="@drawable/greenbutton" 
+				android:layout_width="wrap_content" 
+				android:text="   Log In   "
+				android:textStyle="bold"
+				android:layout_height="36dip" 
+				android:paddingBottom="3dip" ></Button>
+		</TableRow>
+
+</TableLayout>
+		
+		<ListView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/list_view"
+			 
+			> 
+		</ListView>
+
+</RelativeLayout>	
+  	<RelativeLayout android:id="@+id/RelativeLayout04"
+		android:layout_height="50px" android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" >
+		<Button android:id="@+id/bregister" 
+		android:background="@drawable/greenbutton" 
+		android:layout_width="fill_parent" 
+		android:layout_height="36dip" 
+		android:paddingBottom="3dip" 
+		android:text="Create an E-Learning Account"
+		android:textStyle="bold"></Button>
+	</RelativeLayout>
+
+</RelativeLayout>
+	
+		
+ 
+ 

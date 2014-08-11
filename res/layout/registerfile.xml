@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+android:id="@+id/ScrollView01" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent"
+android:background="@drawable/backimg"
+>
+
+<LinearLayout
+  android:layout_width="wrap_content"
+android:orientation="vertical"
+  android:layout_height="wrap_content">
+
+  <TextView android:textColor="#1589FF" android:textSize="30dip" android:text="Registration Page" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+<TableRow> 
+<TextView android:textSize="20dip" android:text="User Name" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<EditText android:text="" android:id="@+id/etusername1" android:layout_width="200sp"  android:layout_height="wrap_content" ></EditText>
+</TableRow>
+
+<TableRow> 
+<TextView android:textSize="20dip" android:text="Password" android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<EditText android:text="" android:password="true" android:id="@+id/etpwd"  android:layout_width="200sp"
+android:layout_height="wrap_content"></EditText>
+</TableRow>
+
+<TableRow> 
+<TextView android:textSize="20dip" android:text="Email Id" android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<EditText android:text=""  android:id="@+id/etemail" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+</TableRow>
+<TableRow>  <TextView></TextView>  </TableRow>
+<TableRow> <TextView></TextView>   </TableRow>
+
+<TableRow>  <TextView></TextView>  </TableRow>
+<TableRow> <TextView></TextView>   </TableRow>
+
+</TableLayout>
+<LinearLayout
+  android:layout_width="fill_parent"
+ android:orientation="horizontal"
+  android:layout_height="fill_parent"
+  >
+		<Button  android:id="@+id/bregister" 
+				android:background="@drawable/greenbutton" 
+				android:layout_width="wrap_content" 
+				android:layout_height="36dip" 
+				android:paddingBottom="3dip" android:text="Register" android:layout_weight="1"></Button>
+
+ 	<Button  android:id="@+id/bcancel" 
+				android:background="@drawable/greenbutton" 
+				android:layout_width="wrap_content" 
+				android:layout_height="36dip" 
+				android:paddingBottom="3dip" android:text="Back" android:layout_weight="1"></Button>
+</LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

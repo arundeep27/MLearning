@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="mobile.learning"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".LoginActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name="RegisterActivity"
+                      android:label="Get Register For M_learning">
+            </activity>
+       
+            <activity android:name="Course"
+                      android:label="Session List">
+            </activity>
+  
+            <activity android:name="VideoActivity"
+                      android:label="Playing Video">
+            </activity>
+           
+           <activity  android:name="WriteReview"
+                      android:label="Giving Review">
+           </activity>
+           
+           <activity  android:name="ViewReview"
+                      android:label="Viewing Review">
+           </activity>
+           <activity  android:name="MultiColumnListView"
+                      android:label="Viewing Review">
+           </activity>
+        
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

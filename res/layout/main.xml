@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/top_control_bar">
+<TextView android:id="@+id/sort_by" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="The Reviews are" android:textSize="25dp"/>
+ 
+ 
+<LinearLayout android:id="@+id/bottom_control_bar"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		
+		>
+<Button android:text="GoBack"
+        android:id="@+id/reviewback" 
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/greenbutton" 
+        android:textStyle="bold"
+        android:layout_height="36dip"
+        android:paddingBottom="3dip"
+        android:layout_width="wrap_content" 
+        android:layout_weight="1">
+      </Button>
+<Button android:text="GoHome" 
+        android:id="@+id/reviewhome" 
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/reviewback"
+        android:background="@drawable/greenbutton"
+        android:textStyle="bold" 
+        android:layout_width="wrap_content" 
+        android:layout_height="36dip"
+        android:paddingBottom="3dip" 
+        android:layout_gravity="left" 
+        android:layout_weight="1">
+    </Button>
+          </LinearLayout>
+          <ListView android:id="@+id/list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_below="@id/sort_by" 
+		android:layout_above="@id/bottom_control_bar">
+		</ListView>
+    </RelativeLayout>
+</RelativeLayout>
